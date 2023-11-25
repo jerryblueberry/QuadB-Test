@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import HomeScreen from './screens/HomeScreen';
 import DetailScreen from './screens/DetailScreen';
 import SearchScreen from './screens/SearchScreen';
-import SplashScreen from './screens/SplashScreen'; // Import your Splash Screen component
+import SplashScreen from './screens/SplashScreen'; 
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
@@ -42,14 +42,13 @@ export default function App() {
   const [isAppReady, setAppReady] = useState(false);
 
   useEffect(() => {
-    // Simulate some asynchronous initialization (e.g., loading assets, checking auth)
-    const initializeApp = async () => {
-      // Perform any necessary initialization here
 
-      // Simulate a delay (you can replace this with your actual initialization logic)
+    const initializeApp = async () => {
+      
+    
       await new Promise(resolve => setTimeout(resolve, 2000));
 
-      // Mark the app as ready
+      
       setAppReady(true);
     };
 
@@ -57,11 +56,11 @@ export default function App() {
   }, []);
 
   if (!isAppReady) {
-    // Render the splash screen while the app is initializing
+ 
     return <SplashScreen />;
   }
 
-  // Render the main content once the app is ready
+
   return (
     <NavigationContainer style={styles.container}>
       <Tab.Navigator
