@@ -146,7 +146,7 @@ const HomeScreen = () => {
               marginTop:6,
             }}>{show.show.name}</Text>
             <Text style={{
-              fontSize:21,
+              fontSize:16,
               color:'#fff',
               marginTop:6,
             }}>{show.show.type}</Text>
